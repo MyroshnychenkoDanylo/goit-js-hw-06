@@ -13,7 +13,7 @@ function onFromSubmit(event) {
     alert("Всі поля повинні бути заповнені");
   } else {
     const formData = { email, password };
-    alert("ok");
+    alert("Супер");
     formREF.reset();
     console.log(formData);
   }
