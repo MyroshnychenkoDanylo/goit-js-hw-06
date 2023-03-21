@@ -1,8 +1,8 @@
-const controlerEl = document.querySelector("#font-size-control");
-const textEl = document.querySelector("#text");
+const controlerREF = document.querySelector("#font-size-control");
+const textREF = document.querySelector("#text");
 
-controlerEl.addEventListener("input", onControlerInput);
+controlerREF.addEventListener("input", onControlerInput);
 
 function onControlerInput() {
-  textEl.style.fontSize = `${controlerEl.value}px`;
+  textREF.style.fontSize = `${controlerREF.value}px`;
 }
