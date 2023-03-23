@@ -15,6 +15,8 @@ function onInputBlur() {
 }
 
 function onInputChange(event) {
-  nameLabelREF.textContent = event.currentTarget.value;
-  console.log(event.currentTarget.value);
+  if (event.currentTarget.value !== "") {
+    nameLabelREF.textContent = event.currentTarget.value;
+    console.log(event.currentTarget.value);
+  } else nameLabelREF.textContent = "Anonymous";
 }
